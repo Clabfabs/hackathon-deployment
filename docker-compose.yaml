@@ -2,7 +2,7 @@ version: "2"
 
 services:
   frontend:
-    image: gmazlami/hackathon-frontend
+    image: powerparrot/hackathon-frontend
     environment:
       - API_URL=http://backend:5000
     ports:
@@ -11,7 +11,7 @@ services:
       - backend
 
   backend:
-    image: gmazlami/hackathon-backend
+    image: powerparrot/hackathon-backend
     environment:
       - MONGO_URL=mongo
       - GOOGLE_DEV_KEY=${GOOGLE_DEV_KEY}
